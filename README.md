@@ -1,6 +1,7 @@
 # Personal Site (React + Vite + React-Bootstrap)
 
-This repository hosts a personal website for me as a link `imahasan.github.io`.
+This repository hosts my personal website, available at [imahasan.github.io](https://imahasan.github.io).
+
 
 
 ## Technologies Used
