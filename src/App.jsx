@@ -17,7 +17,7 @@ export default function App() {
       {/* Navbar */}
       <Navbar bg="light" expand="md" sticky="top" className="border-bottom">
         <Container>
-          <Navbar.Brand href="#home">M A Hasan</Navbar.Brand>
+          <Navbar.Brand href="#home">Md Anwarul Hasan</Navbar.Brand>
           <Navbar.Toggle aria-controls="nav" />
           <Navbar.Collapse id="nav">
             <Nav className="ms-auto">
