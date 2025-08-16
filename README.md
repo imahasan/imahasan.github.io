@@ -14,4 +14,4 @@ This site is built using:
 - **GitHub Pages** — hosting and deployment
 - **GitHub Actions** — automated CI/CD for builds and deployment
 - **JavaScript (ES6+)** — application logic
-- **HTML5 & CSS3** — base structure and styling
+- **HTML5 & CSS3** — base structure and styling 
