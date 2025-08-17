@@ -1,6 +1,13 @@
-import { Container, Navbar, Nav, Row, Col, Button, Card, Badge } from "react-bootstrap";
+import { ReactNode } from 'react';
+import { Container, Navbar, Nav, Row, Col, Button, Card, Badge } from 'react-bootstrap';
 
-function Section({ id, title, children }) {
+type SectionProps = {
+  id: string;
+  title: string;
+  children: ReactNode;
+};
+
+function Section({ id, title, children }: SectionProps) {
   return (
     <section id={id} className="py-5">
       <Container>
@@ -39,7 +46,7 @@ export default function App() {
             <Col md={7}>
               <h1 className="display-5 fw-bold">Hi, I’m Hasan.</h1>
               <p className="lead mb-2">
-                Informatics (NTNU, MSc) — <strong>CISA</strong>. I work at the intersection of{" "}
+                Informatics (NTNU, MSc) — <strong>CISA</strong>. I work at the intersection of{' '}
                 <em>cybersecurity (GRC)</em>, <em>secure software</em>, and <em>machine learning</em>.
               </p>
 
@@ -155,7 +162,7 @@ export default function App() {
       {/* Contact */}
       <Section id="contact" title="Contact">
         <p>
-          Email: <a href="mailto:anwar.cse.mis@gmail.com">Click Here</a> ·{" "}
+          Email: <a href="mailto:anwar.cse.mis@gmail.com">Click Here</a> ·{' '}
           LinkedIn: <a href="https://www.linkedin.com/in/mahasan22/" target="_blank" rel="noreferrer">My LindedIn</a>
         </p>
       </Section>
