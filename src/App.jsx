@@ -150,14 +150,14 @@ export default function App() {
       {/* Contact */}
       <Section id="contact" title="Contact">
         <p>
-          Email: <a href="mailto:you@example.com">you@example.com</a> ·{" "}
-          LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">yourprofile</a>
+          Email: <a href="mailto:anwar.cse.mis@gmail.com">Click Here</a> ·{" "}
+          LinkedIn: <a href="https://www.linkedin.com/in/mahasan22/" target="_blank" rel="noreferrer">My LindedIn</a>
         </p>
       </Section>
 
       <footer className="py-4 border-top">
         <Container className="text-muted">
-          © {new Date().getFullYear()} M A Hasan · Built with React-Bootstrap
+          © {new Date().getFullYear()} Md Anwarul Hasan · Built with React-Bootstrap
         </Container>
       </footer>
     </>
