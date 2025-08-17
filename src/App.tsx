@@ -44,7 +44,7 @@ export default function App() {
         <Container>
           <Row className="align-items-center g-4">
             <Col md={7}>
-              <h1 className="display-5 fw-bold">Hi, I’m Hasan.</h1>
+              <h1 className="display-5 fw-bold">👋 Hi!, I’m Hasan.</h1>
               <p className="lead mb-2">
                 Informatics (NTNU, MSc) — <strong>CISA</strong>. I work at the intersection of{' '}
                 <em>cybersecurity (GRC)</em>, <em>secure software</em>, and <em>machine learning</em>.
