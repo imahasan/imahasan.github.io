@@ -42,16 +42,21 @@ export default function App() {
                 Informatics (NTNU, MSc) — <strong>CISA</strong>. I work at the intersection of{" "}
                 <em>cybersecurity (GRC)</em>, <em>secure software</em>, and <em>machine learning</em>.
               </p>
-              <div className="mb-3">
-                <Badge bg="primary" className="me-2">ISO 27001 & COBIT</Badge>
+
+              {/* Badges group (semantic wrapper) */}
+              <section className="mb-3" aria-label="Skills">
+                <Badge bg="primary" className="me-2">ISO 27001 &amp; COBIT</Badge>
                 <Badge bg="secondary" className="me-2">React • TypeScript • Python</Badge>
                 <Badge bg="success">Power BI • SQL</Badge>
-              </div>
-              <div className="d-flex gap-2">
+              </section>
+
+              {/* CTA buttons as a nav */}
+              <nav className="d-flex gap-2" aria-label="Hero actions">
                 <Button href="#projects">See Projects</Button>
                 <Button variant="outline-secondary" href="#contact">Get in Touch</Button>
-              </div>
+              </nav>
             </Col>
+
             <Col md={5}>
               <Card>
                 <Card.Body>
@@ -83,9 +88,9 @@ export default function App() {
           <Col md={6}>
             <Card>
               <Card.Body>
-                <Card.Title>IT Auditor & GRC Advisor</Card.Title>
+                <Card.Title>IT Auditor &amp; GRC Advisor</Card.Title>
                 <Card.Text>
-                  Led audits of critical financial systems (CBS, CMS, gateways), developed policies & procedures,
+                  Led audits of critical financial systems (CBS, CMS, gateways), developed policies &amp; procedures,
                   coordinated compliance, and introduced MIS reporting for control monitoring.
                 </Card.Text>
               </Card.Body>
