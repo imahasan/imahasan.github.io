@@ -40,9 +40,10 @@ export default function App() {
             <Nav className="flex-column">
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#experience">Experience</Nav.Link>
+              <Nav.Link href="#education">Education</Nav.Link> {/* new item */}
               <Nav.Link href="#projects">Projects</Nav.Link>
               <Nav.Link href="#publications">Publications</Nav.Link>
-              <Nav.Link href="#photography">Photography</Nav.Link>
+              <Nav.Link href="#hobbies">Hobbies</Nav.Link> {/* renamed */}
               <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
           </nav>
@@ -127,6 +128,12 @@ export default function App() {
             </Row>
           </Section>
 
+          {/* Details of education */}
+          <Section id="education" title="Education">
+            <p>Details about my education will be added here.</p>
+          </Section>
+
+
           {/* Projects */}
           <Section id="projects" title="Projects">
             <Row className="g-4">
@@ -165,10 +172,11 @@ export default function App() {
             </ul>
           </Section>
 
-          {/* Photography */}
-          <Section id="photography" title="Photography">
-            <p>I also do photography—events, portraits, street. Selected work coming soon.</p>
+          {/* Hobbies */}
+          <Section id="hobbies" title="Hobbies">
+            <p>Photography, creative projects, and other personal interests will be shared here.</p>
           </Section>
+
 
           {/* Contact */}
           <Section id="contact" title="Contact">
