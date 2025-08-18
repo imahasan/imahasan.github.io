@@ -6,3 +6,12 @@ h1 {
   color: #0f172a; /* dark blue text */
 }
 
+/* Make the left sidebar stick on md+ screens */
+@media (min-width: 768px) {
+  .sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;      /* full viewport height */
+    overflow-y: auto;   /* scroll if needed */
+  }
+}
