@@ -33,11 +33,11 @@ export default function App() {
               </p>
 
               {/* Badges group */}
-              <section className="mb-3" aria-label="Skills">
+              {/* <section className="mb-3" aria-label="Skills">
                 <Badge bg="primary" className="me-2">ISO 27001 &amp; COBIT</Badge>
                 <Badge bg="secondary" className="me-2">React • TypeScript • Python</Badge>
                 <Badge bg="success">Power BI • SQL</Badge>
-              </section>
+              </section> */}
 
               {/* CTAs */}
               <nav className="d-flex gap-2" aria-label="Hero actions">
