@@ -17,7 +17,7 @@ const Sidebar: FC = () => {
       <nav className="px-3">
         <Nav className="flex-column">
           {/* Full-page route */}
-          <Nav.Link as={Link} to="/about">About (full page)</Nav.Link>
+          <Nav.Link as={Link} to="/about">About</Nav.Link>
 
           {/* In-page anchors on the home page */}
           <Nav.Link href="#experience">Experience</Nav.Link>

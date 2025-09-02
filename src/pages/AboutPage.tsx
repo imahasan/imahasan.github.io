@@ -3,134 +3,103 @@ import type { FC } from "react";
 const AboutPage: FC = () => {
   return (
     <main aria-labelledby="about-title">
-      {/* Header card */}
       <section className="container py-4">
-        <section className="row">
-          <article className="user-card w-100">
-            <section className="row g-3 align-items-center">
-              <figure className="col-md-3 m-0">
-                <img
-                  src="/images/self.jpg"
-                  alt="Portrait of Md Anwarul Hasan"
-                  className="img-fluid rounded shadow-sm w-50"
-                />
-                {/* <figcaption className="text-muted small mt-2">
-                  Md Anwarul Hasan
-                </figcaption> */}
-              </figure>
+        {/* Center column */}
+        <section className="row justify-content-center">
+          <section className="col-lg-8">
 
-              <header className="col-md-9">
-                <h1 id="about-title" className="mb-2">Md Anwarul Hasan</h1>
-                <p className="mb-1">
-                  <i aria-hidden="true" className="fa fa-map-marker" />&nbsp;Trondheim, Norway
-                </p>
-                <p className="mb-0">
+            {/* ─── Block 1: Profile ─────────────────────────────── */}
+            <article className="card-like mb-4">
+              <section className="row g-3 align-items-center">
+                <figure className="col-md-3 m-0 text-center">
+                  <img
+                    src="/images/self.jpg"
+                    alt="Portrait of Md Anwarul Hasan"
+                    className="img-fluid rounded shadow-sm"
+                    style={{ maxWidth: 200 }}
+                  />
+                </figure>
+
+                <header className="col-md-9">
+                  <h1 id="about-title" className="mb-2">Md Anwarul Hasan</h1>
+                  <p className="mb-1">
+                    <i aria-hidden="true" className="fa fa-map-marker" />&nbsp;Trondheim, Norway
+                  </p>
+                  <p className="mb-0">
                     <i aria-hidden="true" className="fa fa-envelope-o" />&nbsp;
-                    E-mail: anwar (dot) cse (dot) mis (at) gmail (dot) com
-                </p>
-                <hr />
-              </header>
-            </section>
+                    anwar (dot) cse (dot) mis (at) gmail (dot) com
+                  </p>
+                  <hr />
+                  <p className="mb-0">
+                    I’m a CISA-certified IT professional (MSc Informatics, NTNU) focused on secure
+                    software development, GRC, and data-driven engineering.
+                  </p>
+                </header>
+              </section>
+            </article>
 
-            {/* Intro letter-style section */}
-            <section className="row">
-              <article className="col-md-12 letter">
-                <p>
-                  I’m a CISA-certified IT security professional with an MSc in Informatics (NTNU),
-                  focused on secure software development, GRC, and data-driven engineering. I enjoy
-                  building reliable, security-aware digital services that support sustainable,
-                  human-centric outcomes.
-                </p>
-                <p>
-                  My master’s thesis <em>“An Empirical Study on Applying Parameter-Efficient
-                  Fine-Tuning of Large Language Models for Secure Code Generation”</em> received an A
-                  and was accepted for presentation/publication at FTC 2025 (Springer LNNS). It
-                  strengthened my skills in Python, ML, and secure development practices, and built on
-                  prior success in an NTNU software security hackathon (2nd place).
-                </p>
-                <p>
-                  Professionally, I’ve worked across financial systems and consulting—implementing and
-                  supporting Core Banking (FCUBS), Card Management (CMS), national payment gateways,
-                  and SIEM/HSM integrations; conducting IT audits; and aligning programs to ISO&nbsp;27001,
-                  PCI&nbsp;DSS, COBIT, and NIS&nbsp;2 requirements.
-                </p>
-              </article>
-            </section>
-          </article>
+            {/* ─── Block 2: “I’m also …” (middle) ───────────────── */}
+            <article className="card-like mb-4">
+              <p className="mb-2"><strong>I’m also</strong></p>
+              <p className="mb-0">
+                🗺️&nbsp; a traveller<br />
+                🍳&nbsp; a cook<br />
+                🍽️&nbsp; an avid eater<br />
+                📷&nbsp; a photographer<br />
+                📚&nbsp; a reader<br />
+                🎬&nbsp; a movie watcher<br />
+                ⚽&nbsp; a Barça fan<br />
+                🗣️&nbsp; a polyglot (Bengali, English, Hindi, Norsk)<br />
+                👂&nbsp; and a good listener
+              </p>
+            </article>
+
+            {/* ─── Block 3: Background / Skills (bottom) ────────── */}
+            <article className="card-like">
+              <p className="mb-2"><strong>I can:</strong></p>
+
+              <p className="mb-3">
+                <span className="me-2">💻</span>
+                <strong>Programming:</strong> Python, Java, C, JavaScript, TypeScript, SQL.
+              </p>
+
+              <p className="mb-3">
+                <span className="me-2">🧰</span>
+                <strong>Toolkit:</strong> React, Node.js, Power BI, Git/GitHub, CI/CD, Docker, Oracle/MySQL/MongoDB.
+              </p>
+
+              <p className="mb-3">
+                <span className="me-2">🔐</span>
+                <strong>Security & GRC:</strong> ISO&nbsp;27001, PCI&nbsp;DSS, COBIT, NIS&nbsp;2; IT audits, controls, risk assessment.
+              </p>
+
+              <p className="mb-3">
+                <span className="me-2">🎓</span>
+                MSc Informatics (NTNU, thesis A), CISA, IELTS 7.0, Norwegian B1 (working toward B2).
+              </p>
+
+              <p className="mb-0">
+                I’m motivated by projects that blend engineering, security, and data to build reliable,
+                human-centric, and sustainable digital services.
+              </p>
+            </article>
+          </section>
         </section>
       </section>
 
-      {/* Skills & interests card */}
-      <section className="container pb-4">
-        <section className="row">
-          <article className="col-md-12 letter">
-            <p className="mb-3">
-              🧰&nbsp;<strong>Toolkit:</strong> React/TypeScript, Python, SQL, Power BI, GitHub, CI/CD; Oracle/MySQL/MongoDB.
-              <br />
-              🔐&nbsp;<strong>Security & GRC:</strong> ISO&nbsp;27001, PCI&nbsp;DSS, COBIT, NIS&nbsp;2, audit & controls, risk assessment.
-              <br />
-              🧪&nbsp;<strong>Data/ML:</strong> Pandas, NumPy, scikit-learn, Matplotlib/Seaborn; analytics & visualization.
-            </p>
-
-            <p className="mb-3">
-              🎓&nbsp;<strong>Education & Certs:</strong> MSc Informatics (NTNU, overall B; thesis A); CISA; IELTS 7.0; Norwegian B1 (goal B2).
-            </p>
-
-            <p className="mb-0">
-              Outside of work I enjoy photography, travel, and learning languages; I’m motivated by
-              cross-disciplinary projects that combine engineering, security, and data to improve
-              society.
-            </p>
-          </article>
-        </section>
-      </section>
-
-      {/* Longer background card */}
-      <section className="container pb-5">
-        <section className="row">
-          <article className="col-md-12 letter">
-            <p>
-              I’m passionate about applying secure-by-design principles and data governance to real-world
-              systems—bridging policy, risk, and technical implementation. My background spans software
-              security, policy development, audits, and post-deployment support across mission-critical
-              environments in finance and consulting.
-            </p>
-            <p>
-              In my studies, I completed advanced coursework in Software Security &amp; Data Privacy,
-              Advanced Software Design, Information Retrieval, Applied Data Science, Data Warehousing
-              &amp; Data Mining, Advanced DBMS, and Web Development; I built multiple full-stack projects
-              with React/TypeScript/Node and used Python tooling for analytics.
-            </p>
-            <p>
-              Looking ahead, I’m eager to contribute to interdisciplinary teams building secure, resilient,
-              and sustainable digital solutions—whether through secure system design, analytics,
-              development, or GRC advisory.
-            </p>
-          </article>
-        </section>
-      </section>
-
-      {/* Quick links */}
+      {/* Quick links aligned with the centered column */}
       <nav className="container pb-5" aria-label="External links">
-        <section className="row">
-          <article className="col-md-12">
-            <p className="mb-2"><strong>Links</strong></p>
-            <ul className="list-unstyled">
-              <li>
-                <a href="mailto:anwar.cse.mis@gmail.com">Email</a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/mahasan22/" target="_blank" rel="noreferrer">
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a href="https://imahasan.github.io/" target="_blank" rel="noreferrer">
-                  Home
-                </a>
-              </li>
-            </ul>
-          </article>
+        <section className="row justify-content-center">
+          <section className="col-lg-8">
+            <article className="card-like">
+              <p className="mb-2"><strong>Links</strong></p>
+              <ul className="list-unstyled mb-0">
+                <li><a href="mailto:anwar.cse.mis@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/mahasan22/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://imahasan.github.io/" target="_blank" rel="noreferrer">Home</a></li>
+              </ul>
+            </article>
+          </section>
         </section>
       </nav>
     </main>

@@ -1,10 +1,22 @@
+/* Subtle page background like Arturo’s */
 body {
-  background-color: #f8fafc; /* light gray */
+  background-color: #f6f7f9;
 }
+
 
 h1 {
   color: #0f172a; /* dark blue text */
 }
+
+/* Card-like block without using <div> or <Card> */
+.card-like {
+  background: #ffffff;
+  border: 1px solid var(--bs-border-color, #e5e7eb);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.05);
+}
+
 
 /* Make the left sidebar stick on md+ screens */
 @media (min-width: 768px) {
@@ -13,5 +25,13 @@ h1 {
     top: 0;
     height: 100vh;      /* full viewport height */
     overflow-y: auto;   /* scroll if needed */
+  }
+}
+
+/* Make images look tidy in the profile block on small screens */
+@media (max-width: 767.98px) {
+  .card-like figure {
+    display: flex;
+    justify-content: center;
   }
 }
