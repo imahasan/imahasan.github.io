@@ -46,10 +46,23 @@ const AboutPage: FC = () => {
                 🍳&nbsp; a cook<br />
                 🍽️&nbsp; an avid eater<br />
                 📷&nbsp; a photographer<br />
-                📚&nbsp; a reader<br />
-                🎬&nbsp; a movie watcher<br />
-                ⚽&nbsp; a Barça fan<br />
-                🗣️&nbsp; a polyglot (Bengali, English, Hindi, Norsk)<br />
+                📚&nbsp; a reader — best books I’ve read include 
+<a href="https://en.wikipedia.org/wiki/The_Da_Vinci_Code" target="_blank" rel="noreferrer"><em> Da Vinci Code </em></a> 
+by <a href="https://en.wikipedia.org/wiki/Dan_Brown" target="_blank" rel="noreferrer">Dan Brown </a> 
+and 
+<a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings" target="_blank" rel="noreferrer"><em> Lord of the Rings </em></a> 
+by <a href="https://en.wikipedia.org/wiki/J._R._R._Tolkien" target="_blank" rel="noreferrer">J.R.R. Tolkien</a>
+<br />
+
+                🎬&nbsp; a movie watcher — best movies include 
+<a href="https://en.wikipedia.org/wiki/The_Boy_in_the_Striped_Pyjamas_(film)" target="_blank" rel="noreferrer"><em> The Boy in the Striped Pyjamas </em></a>, 
+<a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)" target="_blank" rel="noreferrer"><em> Lord of the Rings </em></a>, 
+<a href="https://en.wikipedia.org/wiki/The_Terminal" target="_blank" rel="noreferrer"><em> The Terminal </em></a> 
+and many more
+<br />
+
+                ⚽&nbsp; a <a href="https://www.fcbarcelona.com/" target="_blank" rel="noreferrer">Barça</a> fan<br />
+                🗣️&nbsp; a polyglot (🇧🇩 Bengali, 🇬🇧 English, 🇮🇳 Hindi, 🇳🇴 Norsk)<br />
                 👂&nbsp; and a good listener
               </p>
             </article>
@@ -78,10 +91,6 @@ const AboutPage: FC = () => {
                 MSc Informatics (NTNU, thesis A), CISA, IELTS 7.0, Norwegian B1 (working toward B2).
               </p>
 
-              <p className="mb-0">
-                I’m motivated by projects that blend engineering, security, and data to build reliable,
-                human-centric, and sustainable digital services.
-              </p>
             </article>
           </section>
         </section>
@@ -92,7 +101,7 @@ const AboutPage: FC = () => {
         <section className="row justify-content-center">
           <section className="col-lg-8">
             <article className="card-like">
-              <p className="mb-2"><strong>Links</strong></p>
+              <p className="mb-2"><strong>Links to connect</strong></p>
               <ul className="list-unstyled mb-0">
                 <li><a href="mailto:anwar.cse.mis@gmail.com">Email</a></li>
               <li><a href="https://www.linkedin.com/in/mahasan22/" target="_blank" rel="noreferrer">LinkedIn</a></li>
