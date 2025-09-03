@@ -1,21 +1,23 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./css/index.css"; // if you have custom CSS (e.g., .sidebar sticky)
+import "./css/index.css";
 
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import Layout from "./Layout";
-import App from "./App";                 // home page content (no sidebar inside!)
+import App from "./App";
 import AboutPage from "./pages/AboutPage";
+import ExperiencePage from "./pages/ExperiencePage";
 
 const router = createHashRouter([
   {
     path: "/",
-    element: <Layout />,        // Sidebar + main area
+    element: <Layout />, // Sidebar + main area
     children: [
-      { index: true, element: <App /> },        // renders at "#/"
-      { path: "about", element: <AboutPage /> } // renders at "#/about"
+      { index: true, element: <App /> },           // renders at "#/"
+      { path: "about", element: <AboutPage /> },   // renders at "#/about"
+      { path: "experience", element: <ExperiencePage /> }, // renders at "#/experience"
     ],
   },
 ]);
