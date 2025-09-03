@@ -20,7 +20,7 @@ const Sidebar: FC = () => {
           <Nav.Link as={Link} to="/about">About</Nav.Link>
 
           {/* In-page anchors on the home page */}
-          <Nav.Link href="#experience">Experience</Nav.Link>
+          <Nav.Link as={Link} to="/experience">Experience</Nav.Link>
           <Nav.Link href="#education">Education</Nav.Link>
           <Nav.Link href="#projects">Projects</Nav.Link>
           <Nav.Link href="#publications">Publications</Nav.Link>
