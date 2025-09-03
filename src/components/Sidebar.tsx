@@ -21,7 +21,7 @@ const Sidebar: FC = () => {
 
           {/* In-page anchors on the home page */}
           <Nav.Link as={Link} to="/experience">Experience</Nav.Link>
-          <Nav.Link href="#education">Education</Nav.Link>
+          <Nav.Link as={Link} to="/education">Education</Nav.Link>
           <Nav.Link href="#projects">Projects</Nav.Link>
           <Nav.Link href="#publications">Publications</Nav.Link>
           <Nav.Link href="#hobbies">Hobbies</Nav.Link>

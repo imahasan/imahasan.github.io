@@ -9,6 +9,7 @@ import Layout from "./Layout";
 import App from "./App";
 import AboutPage from "./pages/AboutPage";
 import ExperiencePage from "./pages/ExperiencePage";
+import EducationPage from "./pages/EducationPage";
 
 const router = createHashRouter([
   {
@@ -18,6 +19,7 @@ const router = createHashRouter([
       { index: true, element: <App /> },           // renders at "#/"
       { path: "about", element: <AboutPage /> },   // renders at "#/about"
       { path: "experience", element: <ExperiencePage /> }, // renders at "#/experience"
+      { path: "education", element: <EducationPage /> },
     ],
   },
 ]);
