@@ -1,16 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Alert } from "react-bootstrap";
 
 export default function SiteNotice() {
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    const seen = localStorage.getItem("siteNoticeSeen");
-    if (!seen) {
-      setShow(true);
-      localStorage.setItem("siteNoticeSeen", "true");
-    }
-  }, []);
+  const [show, setShow] = useState(true); // 👈 always start visible
 
   if (!show) return null;
 
