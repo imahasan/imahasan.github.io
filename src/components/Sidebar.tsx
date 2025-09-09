@@ -23,6 +23,7 @@ const Sidebar: FC = () => {
           <Nav.Link as={Link} to="/experience">Experience</Nav.Link>
           <Nav.Link as={Link} to="/education">Education</Nav.Link>
           <Nav.Link href="#projects">Projects</Nav.Link>
+          <Nav.Link as={Link} to="/certifications">Certifications</Nav.Link>
           <Nav.Link as={Link} to="/publications">Publications</Nav.Link>
           <Nav.Link href="#hobbies">Hobbies</Nav.Link>
           <Nav.Link href="#contact">Contact</Nav.Link>
