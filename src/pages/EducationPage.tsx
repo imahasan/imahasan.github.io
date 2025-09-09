@@ -38,7 +38,7 @@ const EducationPage: FC = () => {
             </article>
 
             {/* MBA DU */}
-            <article className="card-like mb-4">
+            {/* <article className="card-like mb-4">
               <section className="row g-3 align-items-center">
                 <figure className="col-md-3 m-0 text-center">
                   <img
@@ -60,17 +60,17 @@ const EducationPage: FC = () => {
                 <li>Bridged IT systems with business strategy in the financial sector.</li>
                 <li>Enhanced knowledge in compliance, governance, and enterprise processes.</li>
               </ul>
-            </article>
+            </article> */}
 
-            {/* BSc EWU */}
+            {/* BSc SUST */}
             <article className="card-like mb-4">
               <section className="row g-3 align-items-center">
                 <figure className="col-md-3 m-0 text-center">
                   <img
                     src="/images/education/sust.png"
-                    alt="East West University Logo"
+                    alt="SUST Logo"
                     className="img-fluid"
-                    style={{ maxWidth: 120 }}
+                    style={{ maxWidth: 100 }}
                   />
                 </figure>
                 <header className="col-md-9">

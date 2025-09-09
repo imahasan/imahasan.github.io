@@ -11,6 +11,7 @@ import AboutPage from "./pages/AboutPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import EducationPage from "./pages/EducationPage";
 import PublicationsPage from "./pages/PublicationsPage";
+import CertificationsPage from "./pages/CertificationsPage";
 
 const router = createHashRouter([
   {
@@ -18,10 +19,11 @@ const router = createHashRouter([
     element: <Layout />, // Sidebar + main area
     children: [
       { index: true, element: <App /> },           // renders at "#/"
-      { path: "about", element: <AboutPage /> },   // renders at "#/about"
-      { path: "experience", element: <ExperiencePage /> }, // renders at "#/experience"
+      { path: "about", element: <AboutPage /> },   
+      { path: "experience", element: <ExperiencePage /> },
       { path: "education", element: <EducationPage /> },
       { path: "publications", element: <PublicationsPage /> },
+      { path: "certifications", element: <CertificationsPage /> },
     ],
   },
 ]);
