@@ -8,6 +8,12 @@ h1 {
   color: #0f172a; /* dark blue text */
 }
 
+.edu-logo {
+  max-width: 80px;  /* adjust size once */
+  height: auto;
+}
+
+
 /* Card-like block without using <div> or <Card> */
 .card-like {
   background: #ffffff;
