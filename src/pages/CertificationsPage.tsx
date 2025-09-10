@@ -13,9 +13,16 @@ const CertificationsPage: FC = () => {
 
             {/* Featured: CISA (Credly) */}
             <article className="card-like mb-4">
-              <header className="mb-2">
-                <h2 className="h5 mb-1">CISA — Certified Information Systems Auditor</h2>
-                <p className="mb-0">ISACA</p>
+              <header className="mb-2 d-flex align-items-center">
+                <img
+                  src="/images/education/isaca.png"
+                  alt="ISACA Logo"
+                  style={{ height: "2em", marginRight: "0.5em" }}
+                />
+                <div>
+                  <h2 className="h5 mb-1">CISA — Certified Information Systems Auditor</h2>
+                  <p className="mb-0">ISACA</p>
+                </div>
               </header>
               <p className="mb-2">
                 Validates expertise in IS audit, governance, risk, and compliance.
@@ -33,9 +40,16 @@ const CertificationsPage: FC = () => {
 
             {/* Featured: Cisco Intro to Cybersecurity (Credly) */}
             <article className="card-like mb-4">
-              <header className="mb-2">
-                <h2 className="h5 mb-1">Introduction to Cybersecurity</h2>
-                <p className="mb-0">Issued by Cisco</p>
+              <header className="mb-2 d-flex align-items-center">
+                <img
+                  src="/images/certifications/cisco.png"
+                  alt="Cisco Logo"
+                  style={{ height: "2em", marginRight: "0.5em" }}
+                />
+                <div>
+                  <h2 className="h5 mb-1">Introduction to Cybersecurity</h2>
+                  <p className="mb-0">Issued by Cisco</p>
+                </div>
               </header>
               <p className="mb-2">
                 Foundational knowledge of cybersecurity concepts, threats, and defenses.
@@ -53,9 +67,16 @@ const CertificationsPage: FC = () => {
 
             {/* LinkedIn Learning certificates */}
             <article className="card-like">
-              <header className="mb-2">
-                <h2 className="h5 mb-1">LinkedIn Learning Certificates</h2>
-                <p className="text-muted mb-0">Selected courses completed</p>
+              <header className="mb-2 d-flex align-items-center">
+                <img
+                  src="/images/certifications/linkedin.png"
+                  alt="LinkedIn Logo"
+                  style={{ height: "2em", marginRight: "0.5em" }}
+                />
+                <div>
+                  <h2 className="h5 mb-1">LinkedIn Learning Certificates</h2>
+                  <p className="text-muted mb-0">Selected courses completed</p>
+                </div>
               </header>
               <ul className="mb-0">
                 <li>
@@ -158,6 +179,7 @@ const CertificationsPage: FC = () => {
                     The IT Professional's Path to Cybersecurity
                   </a>
                 </li>
+                {/* keep the rest of your LinkedIn certs here, same structure */}
               </ul>
             </article>
           </section>
