@@ -69,8 +69,8 @@ const EducationPage: FC = () => {
                   <img
                     src="/images/education/sust.png"
                     alt="SUST Logo"
-                    className="img-fluid"
-                    style={{ maxWidth: 100 }}
+                    className="img-fluid edu-logo"
+                    style={{ maxWidth: 50 }}
                   />
                 </figure>
                 <header className="col-md-9">
@@ -88,7 +88,7 @@ const EducationPage: FC = () => {
             </article>
 
             {/* Certifications */}
-            <article className="card-like">
+            {/* <article className="card-like">
               <header className="mb-2">
                 <h2 className="h5 mb-1">Certifications</h2>
               </header>
@@ -106,7 +106,7 @@ const EducationPage: FC = () => {
                   Norwegian language training up to B1 (working toward B2)
                 </li>
               </ul>
-            </article>
+            </article> */}
           </section>
         </section>
       </section>
