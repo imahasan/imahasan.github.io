@@ -13,6 +13,7 @@ import EducationPage from "./pages/EducationPage";
 import PublicationsPage from "./pages/PublicationsPage";
 import CertificationsPage from "./pages/CertificationsPage";
 import ContactPage from "./pages/ContactPage";
+import ProjectsPage from "./pages/ProjectsPage";
 
 const router = createHashRouter([
   {
@@ -26,6 +27,7 @@ const router = createHashRouter([
       { path: "publications", element: <PublicationsPage /> },
       { path: "certifications", element: <CertificationsPage /> },
       { path: "contact", element: <ContactPage /> },
+      { path: "projects", element: <ProjectsPage /> },
     ],
   },
 ]);
