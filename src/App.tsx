@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Container, Row, Col, Button, Card, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 
 type SectionProps = {
   id: string;
@@ -28,20 +28,13 @@ export default function App() {
             <Col md={7}>
               <h1 className="display-5 fw-bold">👋 Hi!, I’m Hasan.</h1>
               <p className="lead mb-2">
-                Informatics (NTNU, MSc) — <strong>CISA</strong>. I work at the intersection of{' '}
-                <em>cybersecurity (GRC)</em>, <em>secure software</em>, and <em>machine learning</em>.
+                Informatics (NTNU, MSc) — I’m <strong>CISA-certified</strong>. My expertise lies in the
+                intersection of <em>cybersecurity (GRC)</em>, <em>secure software development</em>, <em>AI</em>, and <em>machine learning</em>.
               </p>
-
-              {/* Badges group */}
-              {/* <section className="mb-3" aria-label="Skills">
-                <Badge bg="primary" className="me-2">ISO 27001 &amp; COBIT</Badge>
-                <Badge bg="secondary" className="me-2">React • TypeScript • Python</Badge>
-                <Badge bg="success">Power BI • SQL</Badge>
-              </section> */}
 
               {/* CTAs */}
               <nav className="d-flex gap-2" aria-label="Hero actions">
-                <Button href="#projects">See Projects</Button>
+                <Button href="#vision">My Vision</Button>
                 <Button variant="outline-secondary" href="#contact">Get in Touch</Button>
               </nav>
             </Col>
@@ -63,82 +56,23 @@ export default function App() {
         </Container>
       </section>
 
-      {/* About */}
-      <Section id="about" title="About">
-        <p>
-          I’m based in Trondheim, Norway. My background spans IT governance, risk and compliance (GRC),
-          IT auditing, software testing, and data-driven development. I enjoy building secure, reliable systems.
-        </p>
-      </Section>
-
-      {/* Experience */}
-      <Section id="experience" title="Experience">
-        <Row className="g-4">
-          <Col md={6}>
-            <Card>
-              <Card.Body>
-                <Card.Title>IT Auditor &amp; GRC Advisor</Card.Title>
-                <Card.Text>
-                  Led audits of critical financial systems (CBS, CMS, gateways), developed policies &amp; procedures,
-                  coordinated compliance, and introduced MIS reporting for control monitoring.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={6}>
-            <Card>
-              <Card.Body>
-                <Card.Title>Teaching Assistant — NTNU</Card.Title>
-                <Card.Text>
-                  Assisted in Advanced Software Design (TDT4250), mentoring on software architecture.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Section>
-
-      {/* Projects */}
-      <Section id="projects" title="Projects">
-        <Row className="g-4">
-          <Col md={6}>
-            <Card>
-              <Card.Body>
-                <Card.Title>Secure Code Gen with PEFT</Card.Title>
-                <Card.Text>
-                  Fine-tuned CodeGen-2B (LoRA/IA3) for C/C++ secure code generation; evaluated with static analyzers.
-                </Card.Text>
-                <Button size="sm" variant="outline-primary" href="#">Read more</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={6}>
-            <Card>
-              <Card.Body>
-                <Card.Title>Web Dev — TypeScript Apps</Card.Title>
-                <Card.Text>
-                  React + Node/GraphQL apps: typed components, API integration, and testing.
-                </Card.Text>
-                <Button size="sm" variant="outline-primary" href="#">View on GitHub</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Section>
-
-      {/* Publications */}
-      <Section id="publications" title="Publications">
-        <ul>
-          <li>
-            FTC 2025 (accepted): “Applying PEFT to Secure Code Generation”.
-            To appear in <em>Springer Lecture Notes in Networks and Systems (LNNS)</em>.
-          </li>
-        </ul>
-      </Section>
-
-      {/* Hobbies (formerly Photography) */}
-      <Section id="hobbies" title="Hobbies">
-        <p>I also do photography—events, portraits, street. Selected work coming soon.</p>
+      {/* 🌟 My Vision Section */}
+      <Section id="vision" title="🎯 My Vision">
+        <div className="highlight-section">
+          <p className="blurb">
+            I believe that the future of technology depends on building systems that are <strong>secure by design</strong>.
+            My vision is to <strong>make software development secure with the use of AI and machine learning</strong> —
+            integrating intelligent models that detect vulnerabilities early, automate compliance, and
+            guide developers toward safe coding practices.
+          </p>
+          <h3>🔑 Key Areas I Care About</h3>
+          <ul>
+            <li>Using AI-assisted tools to prevent security flaws before deployment</li>
+            <li>Embedding secure-by-default principles into the SDLC</li>
+            <li>Balancing usability, privacy, and robust defense mechanisms</li>
+            <li>Promoting awareness of secure development practices in teams</li>
+          </ul>
+        </div>
       </Section>
 
       {/* Contact */}
